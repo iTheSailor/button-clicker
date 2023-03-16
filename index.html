@@ -1,0 +1,55 @@
+<!-- YOU CAN SEE THE ALERT FUNCTION ON THE ADD DEFINITION BUTTON
+-----BY TRYING TO SEND AN EMPTY SUBMISSION. 
+-------------                                      IBRAHIM SALIR-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stlye.css">
+    <script src="script.js"></script> 
+</head>
+<body>
+    <div id="wrapper">
+        <form action="" method="post" class="navbar">
+            <h1>Dojonary</h1>
+            <input type="text" id="searchbar" placeholder="Search...">
+            <input onclick="loginButton(this)" type="button" value="Login" id="logButton">
+        </form>
+        <div id="contentwrapper">
+            <div class="firstcolumn" id="left">           
+                <div class="definitionBox">
+                    <div class="wordstats">
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural:<em>ninjas</em></p>
+                        <input type="button" onclick="counter(this)" value="0 Likes" id="likebutton">
+                    </div>
+                    <p class="definition">a practitioner skilled in the Japanese art of ninjutsu</p>
+                </div>
+                <div class="definitionBox">
+                    <div class="wordstats">
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural:<em>ninjas</em></p>
+                        <input type="button" onclick="counter(this)" value="0 Likes" id="likebutton">
+                    </div>
+                    <p class="definition">a programmer who breaks down problems with zen-like focus</p>
+                </div>
+            </div>
+            <div class="secondcolumn">
+                <div class="definitionSubmission">
+                    <h2>Dojonary is defined by <strong>YOU</strong></h2>
+                    <form action="#"> <!--gotta fix this part resetting on first submit-->
+                        <input type="button" onclick="subDef(this)" value="Add Definition" id="addbutton">
+                        <textarea name="textsub" id="newSubmission" cols="30" rows="10" placeholder="Submit your definition here!" maxlength="256" ></textarea>
+                        <input type="submit" value="Click to Submit" id="submitButton" onclick="getNewDef()">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

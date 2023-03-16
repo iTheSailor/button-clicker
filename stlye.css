@@ -1,0 +1,184 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#submitButton{
+    display:none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#wrapper{
+    width: 75%;
+    margin: auto;
+    min-width: min-content;
+    /* border:black solid 1px; */
+}
+.navbar{
+    background-color:rgba(0, 0, 128, 0.205);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    min-width: 848px;
+    margin-bottom: 10px;
+    border-right: black solid 4px;
+    border-top:black solid 2px;
+    border-left: rgba(255, 255, 255, 0.5) solid 4px;
+    border-bottom: rgba(255, 255, 255, 0.5) solid 2px;
+
+}
+#searchbar{
+    margin: 0 25px;
+    flex: 0 2 auto;
+    width: 50%;
+}
+/* ------------^ Nav Bar | Content Columns v------------ */
+#contentwrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 5%;
+    padding-top: 35px;
+    background-color: rgba(255, 234, 118, 0.5);
+    max-height: none;
+    min-height: 65vh;
+    min-width: 848px;
+    border-bottom: black solid 2px;
+    border-left: black solid 4px;
+    border-right: rgba(255, 255, 255, 0.651) solid 4px;
+    border-top: rgba(255, 255, 255, 0.205) solid 2px;
+}
+#left{
+    flex: .5 1 auto;
+    /* background-color: rgba(73, 80, 80, 0.205); */
+}
+.secondcolumn{
+    flex: 0 1 auto;
+    /* background-color: aliceblue; */
+}
+/* ------------definition boxes------- */
+.definitionBox{
+    border: black solid 2px;
+    background-color: azure;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 25px;
+    padding: 25px;
+}
+.wordstats{
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wordstats>h1{
+    margin-bottom: 0px;
+}
+.wordstats>p{
+    margin-top: 0px;
+}
+.definition{
+    display: inherit;
+    height: auto;
+    width: 300px;
+    padding: 15px;
+    text-align: justify;
+    align-content: center;
+}
+/* ------------submission formatting -------- */
+.definitionSubmission{
+    width: 70%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    text-align: center;
+    border: black solid 2px;
+    background-color: azure;
+    min-width: min-content;
+}
+#newSubmission{
+    display: none;
+    width: 200px;
+    height: 75px;
+    max-height: 100px;
+    min-height: 50px;
+    resize:vertical;
+}
+/* --buttons-- */
+/* like */
+#likebutton{
+    background-color: aquamarine;
+    border: rgb(66, 129, 108) solid 2px;
+    border-radius: 10%;
+}
+#likebutton:hover{
+    background-color: rgb(83, 168, 140);
+    border: rgb(109, 226, 181) solid 2px;
+    border-radius: 10%;
+}
+#likebutton:active{
+    background-color: rgb(230, 235, 233);
+    border: rgb(17, 54, 42) solid 2px;
+    /* margin: 0px -2px -2px 0px;     */
+    /* padding: 2px 0px 0px 2px; */
+    border-radius: 10%;
+}
+/* login */
+#logButton{
+    background-color: rgb(0, 174, 255);
+    border: steelblue solid 2px;
+    border-radius: 0%;
+    width: 10%;
+}
+#logButton:hover{
+    background-color: rgb(51, 203, 223);
+    border: rgb(109, 226, 181) solid 2px;
+    border-radius: 7%;
+}
+#logButton:active{
+    background-color: rgb(206, 255, 127);
+    border: rgb(17, 54, 42) solid 2px;
+    /* margin: 0px -2px -2px 0px;     */
+    /* padding: 2px 0px 0px 2px; */
+    border-radius: 40%;
+}
+/* submissions */
+#submitButton{
+    background-color: rgb(0, 174, 255);
+    border: steelblue solid 2px;
+    border-radius: 0%;
+    /* width: 10%; */
+}
+#submitButton:hover{
+    background-color: rgb(51, 203, 223);
+    border: rgb(109, 226, 181) solid 2px;
+    border-radius: 7%;
+}
+#submitButton:active{
+    background-color: rgb(206, 255, 127);
+    border: rgb(17, 54, 42) solid 2px;
+}
+#addbutton{
+    background-color: rgba(0, 174, 255, 0.514);
+    border: steelblue solid 2px;
+    border-radius: 0%;
+}
+
+#addbutton:hover{
+    background-color: rgba(51, 203, 223, 0.479);
+    border: rgb(109, 226, 181) solid 2px;
+    border-radius: 7%;
+    }
+
+#addbutton:active{
+    background-color: rgba(206, 255, 127, 0.39);
+    border: rgb(17, 54, 42) solid 2px
+    }
