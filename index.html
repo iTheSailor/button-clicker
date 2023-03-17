@@ -42,10 +42,11 @@
             <div class="secondcolumn">
                 <div class="definitionSubmission">
                     <h2>Dojonary is defined by <strong>YOU</strong></h2>
-                    <form action="#"> <!--gotta fix this part resetting on first submit-->
+                    <form action="#" id="form" target="ghost"> <!--gotta fix this part resetting on first submit-->
                         <input type="button" onclick="subDef(this)" value="Add Definition" id="addbutton">
                         <textarea name="textsub" id="newSubmission" cols="30" rows="10" placeholder="Submit your definition here!" maxlength="256" ></textarea>
                         <input type="submit" value="Click to Submit" id="submitButton" onclick="getNewDef()">
+                        <iframe name="ghost" id="ghost" style="display: none;"></iframe>
                     </form>
                 </div>
             </div>

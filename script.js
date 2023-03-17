@@ -60,16 +60,3 @@ function getNewDef() {
 //----------TODO
 //-get text area to adjust size automatically
 //
-//----------bugs
-//- randomly resets to init at first interactions, has to do with
-//form action on line 45
-//
-//
-// function subDef(e) {
-//     e.type = "text"
-//     e.placeholder="  add your definition here..."
-//     e.value = ""
-//     e.className = "subBox"
-//     var x = document.getElementById("submitButton")
-//     x.style.display ='block'
-// }
